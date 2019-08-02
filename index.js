@@ -23,6 +23,6 @@ function addNewLiOnClick() {
   let submit = document.querySelector('input[type="submit"]')
   submit.addEventListener('click', function(e) {
     addNewElementAsLi();
-    input.value = '';
+    document.querySelectorAll('form input')[0].value = '';
   });
 }
