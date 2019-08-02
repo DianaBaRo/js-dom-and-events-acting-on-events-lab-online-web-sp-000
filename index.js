@@ -13,7 +13,7 @@ function retrieveEmployeeInformation() {
 }
 
 function addNewElementAsLi() {
-  let ul = document.querySelector('ul.employee-list');
+  let ul = document.querySelector('ul.employee-list')[0];
   let li = document.createElement('li');
   li.innerHTML = retrieveEmployeeInformation();
   ul.appendChild(li);
@@ -23,6 +23,6 @@ function addNewLiOnClick() {
   let submit = document.querySelector('input[type="submit"]')
   submit.addEventListener('click', function(e) {
     addNewElementAsLi();
-    document.querySelectorAll('form input')[0].value = '';
+    input.value = '';
   });
 }
