@@ -13,10 +13,8 @@ function retrieveEmployeeInformation() {
 }
 
 function addNewElementAsLi() {
-  let ul = document.querySelector('ul.employee-list');
-  let li = document.createElement('li');
-  li.innerHTML = retrieveEmployeeInformation();
-  ul.appendChild(li);
+  let employeeName = retrieveEmployeeInformation()
+  document.querySelector('.employee-list').insertAdjacentHTML('beforeend', `<li>${employeeName}</li>`)
 }
 
 function addNewLiOnClick() {
