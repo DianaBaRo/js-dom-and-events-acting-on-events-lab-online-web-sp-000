@@ -26,3 +26,7 @@ function addNewLiOnClick() {
     input.value = '';
   });
 }
+
+function clearEmployeeListOnLinkClick() {
+  clearButton = document.querySelector('ul.employee-list a')
+}
